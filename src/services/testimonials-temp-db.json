@@ -1,0 +1,89 @@
+{
+    "testimonials": [
+      {
+        "key": 1,
+        "name": "Robson Monteiro",
+        "stars": 5,
+        "testimonial": "Labore autem facere sit, neque nesciunt facilis quae vel nisi dolores libero modi? Eligendi, ea iusto nostrum illo magni aperiam animi commodi."
+      },
+      {
+        "key": 2,
+        "name": "Monichara Moccelin",
+        "stars": 2,
+        "testimonial": "Labore autem facere sit, neque nesciunt facilis quae vel nisi dolores libero modi? Eligendi, ea iusto nostrum illo magni aperiam animi commodi."
+      },
+      {
+        "key": 4,
+        "name": "Oliver Franco",
+        "stars": 3,
+        "testimonial": "Labore autem facere sit, neque nesciunt facilis quae vel nisi dolores libero modi? Eligendi, ea iusto nostrum illo magni aperiam animi commodi."
+      },
+      {
+        "key": 5,
+        "name": "Maria Silva",
+        "stars": 3,
+        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "key": 6,
+        "name": "Carlos Oliveira",
+        "stars": 2,
+        "testimonial": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "key": 7,
+        "name": "Amanda Souza",
+        "stars": 5,
+        "testimonial": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "key": 8,
+        "name": "Lucas Santos",
+        "stars": 4,
+        "testimonial": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "key": 9,
+        "name": "Juliana Pereira",
+        "stars": 5,
+        "testimonial": "Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+      },
+      {
+        "key": 10,
+        "name": "Fernanda Lima",
+        "stars": 4,
+        "testimonial": "Adipisci molestias sit odio? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+      },
+      {
+        "key": 11,
+        "name": "Gabriel Martins",
+        "stars": 3,
+        "testimonial": "Aliquam quaerat voluptatem? Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
+      },
+      {
+        "key": 12,
+        "name": "Vanessa Oliveira",
+        "stars": 5,
+        "testimonial": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+      },
+      {
+        "key": 13,
+        "name": "Rafaela Costa",
+        "stars": 4,
+        "testimonial": "Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      },
+      {
+        "key": 14,
+        "name": "Rodrigo Pereira",
+        "stars": 5,
+        "testimonial": "Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+      },
+      {
+        "key": 15,
+        "name": "Camila Oliveira",
+        "stars": 2,
+        "testimonial": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+      }
+    ]
+  }
+  

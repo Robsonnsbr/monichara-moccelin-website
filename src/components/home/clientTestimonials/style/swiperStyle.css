@@ -1,0 +1,31 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--extraLightBlueGray);
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  text-shadow: 0 1px 0 rgba(1, 1, 2, 0.8);
+  font-weight: bold;
+  color: var(--lightApricotSalmon);
+}
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  color: white;
+  scale: 0.8;
+}
+
+
+.class-slide-box {
+  box-shadow: 0px 0px 4px 1px #000000a1;
+  @apply flex flex-col rounded-md gap-4 min-h-[410px] p-4 max-w-[350px] bg-white/90 text-deepIndigoBlue text-center justify-center items-center  mx-auto hover:scale-105 hover:translate-y-4 transition-all ease-linear duration-200
+}
+
+.class-slide-box:hover {
+  box-shadow: 0px -5px 10px 4px #00000053;
+}
