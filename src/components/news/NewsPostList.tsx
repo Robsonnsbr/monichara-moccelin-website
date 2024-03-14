@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { TbFaceIdError, TbFileRss } from 'react-icons/tb';
-import { format } from 'date-fns';
 import LoadingSkeleton from '../common/LoadingSkeleton';
 import { usePost } from 'src/hooks';
+import { dateFormatter } from 'src/utils/dateFormatter';
 
 function NewsPostList() {
   const { isLoading, postList } = usePost();
@@ -25,11 +25,8 @@ function NewsPostList() {
                       <TbFileRss className="w-full size-10" />
                     </div>
                     <div>
-                      <time
-                        dateTime="2023-01-13T17:30"
-                        className="font-openSans text-[10px]  text-mediumBlueGray"
-                      >
-                        {format(post.createdAt, 'dd/MM/yyyy - HH:mm')}
+                      <time className="font-openSans text-[10px]  text-mediumBlueGray">
+                        {dateFormatter(post.createdAt)}
                       </time>
                       <h3 className="text-xl font-medium">{post.title}</h3>
 
