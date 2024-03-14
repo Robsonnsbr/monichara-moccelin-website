@@ -12,13 +12,17 @@ function AboutSummaryInfo() {
           data-aos="fade-up-left"
         >
           <Image
-            width={768}
-            height={1024}
+            width={525}
+            height={700}
             alt="image-monichara"
             src={moniImage1}
             placeholder="blur"
             loading="lazy"
-            style={{ width: 'auto', height: 'auto', maxHeight: 630 }}
+            style={{
+              width: 'auto',
+              height: 'auto',
+              maxHeight: 600
+            }}
           />
         </div>
         <div
@@ -70,13 +74,13 @@ function AboutSummaryInfo() {
           data-aos="fade-up-right"
         >
           <Image
-            width={768}
-            height={1024}
+            width={525}
+            height={700}
             alt="image-monichara"
             src={moniImage3}
             placeholder="blur"
             loading="lazy"
-            style={{ width: 'auto', height: 'auto', maxHeight: 630 }}
+            style={{ width: 'auto', height: 'auto', maxHeight: 600 }}
           />
         </div>
         <div

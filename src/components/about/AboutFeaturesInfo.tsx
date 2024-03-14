@@ -7,13 +7,13 @@ function AboutFeaturesInfo() {
     <div className="lg:flex flex-row lg:gap-4 m-auto" data-aos="fade-up-left">
       <div className="flex flex-1 order-1 lg:order-2 justify-center md:justify-end">
         <Image
-          width={768}
-          height={1024}
+          width={525}
+          height={700}
           placeholder="blur"
           loading="lazy"
           alt="image-monichara"
           src={moniImage2}
-          style={{ width: 'auto', height: 'auto', maxHeight: 630 }}
+          style={{ width: 'auto', height: 'auto', maxHeight: 600 }}
         />
       </div>
       <div className="flex-1 text-justify pl-11" data-aos="fade-up-right">
