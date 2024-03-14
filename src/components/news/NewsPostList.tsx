@@ -2,39 +2,15 @@
 
 import Link from 'next/link';
 import { TbFaceIdError, TbFileRss } from 'react-icons/tb';
-import { getPosts } from 'src/services/notion';
 import { format } from 'date-fns';
-import { useEffect, useState } from 'react';
 import LoadingSkeleton from '../common/LoadingSkeleton';
-
-interface Post {
-  id: string;
-  title: string;
-  slug: string;
-  tags: string[];
-  content: string | undefined;
-  createdAt: string;
-}
+import { usePost } from 'src/hooks';
 
 function NewsPostList() {
-  const [postList, setPostList] = useState<Post[] | undefined>([]);
-  const [isLoading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    (async () => {
-      setLoading(true);
-      try {
-        const posts = await getPosts();
-        setPostList(posts);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error fetching posts:', error);
-      }
-    })();
-  }, []);
+  const { isLoading, postList } = usePost();
 
   return (
-    <>
+    <div>
       {isLoading ? (
         <LoadingSkeleton />
       ) : (
@@ -86,7 +62,7 @@ function NewsPostList() {
             ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }
 

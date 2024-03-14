@@ -67,3 +67,12 @@ export interface Title {
 interface User {
   // Define the structure of a user if possible
 }
+
+export interface Post {
+  id: string;
+  title: string;
+  slug: string;
+  tags: string[];
+  content: string;
+  createdAt: string;
+}

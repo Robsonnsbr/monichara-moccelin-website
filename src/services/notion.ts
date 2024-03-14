@@ -1,17 +1,8 @@
 'use server';
 
 import { Client } from '@notionhq/client';
-import { NotionDataBaseResponse } from 'src/types/notionType';
+import { NotionDataBaseResponse, Post } from 'src/types/notionType';
 import { NotionToMarkdown } from 'notion-to-md';
-
-interface Post {
-  id: string;
-  title: string;
-  slug: string;
-  tags: string[];
-  content: string | undefined;
-  createdAt: string;
-}
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 const DATABASE_ID = process.env.NOTION_DATABASE_ID || '';
