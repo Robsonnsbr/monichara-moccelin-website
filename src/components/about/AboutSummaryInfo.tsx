@@ -1,4 +1,5 @@
 import moniImage1 from 'public/assets/image/image-moni-1.jpg';
+import moniImage3 from 'public/assets/image/image-moni-3.jpg';
 import { RiCheckDoubleLine } from 'react-icons/ri';
 import Image from 'next/image';
 
@@ -72,7 +73,7 @@ function AboutSummaryInfo() {
             width={768}
             height={1024}
             alt="image-monichara"
-            src={moniImage1}
+            src={moniImage3}
             placeholder="blur"
             loading="lazy"
             style={{ width: 'auto', height: 'auto', maxHeight: 630 }}
