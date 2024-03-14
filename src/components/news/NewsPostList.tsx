@@ -21,25 +21,16 @@ function NewsPostList() {
   const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    let isMounted = true;
-
     (async () => {
       setLoading(true);
       try {
         const posts = await getPosts();
-
-        if (isMounted) {
-          setPostList(posts);
-          setLoading(false);
-        }
+        setPostList(posts);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching posts:', error);
       }
     })();
-
-    return () => {
-      isMounted = false;
-    };
   }, []);
 
   return (
