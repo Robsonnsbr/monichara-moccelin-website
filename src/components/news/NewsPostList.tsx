@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { TbFaceIdError, TbFileRss } from 'react-icons/tb';
-// import { getPosts } from 'src/services/notion';
 import { format } from 'date-fns';
 import LoadingSkeleton from '../common/LoadingSkeleton';
 import { usePost } from 'src/hooks';
@@ -11,7 +10,7 @@ function NewsPostList() {
   const { isLoading, postList } = usePost();
 
   return (
-    <>
+    <div>
       {isLoading ? (
         <LoadingSkeleton />
       ) : (
@@ -63,7 +62,7 @@ function NewsPostList() {
             ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }
 

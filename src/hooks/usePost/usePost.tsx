@@ -10,10 +10,10 @@ export const usePost = () => {
     try {
       setLoading(true);
       const data = await getPosts();
-
       setPostList(data);
     } catch (error) {
       console.error('Error fetching posts:', error);
+      throw new Error('Erro ao pegar dados');
     } finally {
       setLoading(false);
     }
