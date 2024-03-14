@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bgListServer from 'public/assets/image/bg-list-services/bg-icon-list-services.png';
+import bgListServer from 'public/assets/background/bg-list-services/bg-icon-list-services.png';
 import { ReactNode } from 'react';
 
 export const ContainerIconListServices = ({

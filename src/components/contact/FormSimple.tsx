@@ -1,10 +1,9 @@
 'use client';
 import { ButtonSend } from './ButtonSend';
 import { RiMailSendLine } from 'react-icons/ri';
-import { BsCheck2All } from 'react-icons/bs';
 import ReCAPTCHAComponent from './ReCAPTCHAComponent';
-import { TbFaceIdError } from 'react-icons/tb';
 import { useSubmitForm } from '../../hooks/index';
+import WarningSend from './WarningSend';
 
 export const FormSimple = () => {
   const {
@@ -97,24 +96,9 @@ export const FormSimple = () => {
           atualizar={isSubmitting}
           RECAPTCHA_KEY={RECAPTCHA_SITE_KEY}
         />
-        <div className="flex items-center justify-start relative">
-          <div
-            className={`text-noBlack absolute top-1/4 left-1/2 flex items-center gap-1 transition-opacity ease-in-out duration-500 ${
-              isWasSend ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <span>Sua mensagem foi enviada!</span>
-            <BsCheck2All className="size-5 text-lightApricotSalmon  align-middle" />
-          </div>
-          <div
-            className={`text-noBlack absolute top-1/4 left-1/2 flex items-center gap-1 transition-opacity ease-in-out duration-500 ${
-              isError ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <span>Falha ao enviar mensagem</span>
-            <TbFaceIdError className="size-5 text-errorRed  align-middle" />
-          </div>
+        <div className="flex items-center justify-start relative min-w-[322px]">
           <ButtonSend isSubmitting={isSubmitting} />
+          <WarningSend isError={isError} isWasSend={isWasSend} />
         </div>
       </form>
     </div>
