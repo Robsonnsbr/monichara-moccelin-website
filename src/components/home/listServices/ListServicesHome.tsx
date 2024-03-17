@@ -23,7 +23,9 @@ function ListServices() {
   const sectionListServices = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    updateSectionListServicesRef(sectionListServices.current);
+    if (sectionListServices.current) {
+      updateSectionListServicesRef(sectionListServices.current);
+    }
   }, [updateSectionListServicesRef]);
 
   return (

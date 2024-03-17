@@ -1,12 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 
-interface ContainerMediumProps extends HTMLAttributes<HTMLDivElement> {}
+interface IContainerProps extends HTMLAttributes<HTMLDivElement> {}
 
-const ContainerMedium: React.FC<ContainerMediumProps> = ({
-  children,
-  className,
-  ...rest
-}) => {
+const ContainerMedium = ({ children, className, ...rest }: IContainerProps) => {
   return (
     <div
       {...rest}

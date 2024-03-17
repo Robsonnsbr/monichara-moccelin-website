@@ -14,14 +14,14 @@ const styleCustom = `flex flex-col w-fit h-fit items-center justify-center
   bg-black/20 border-2 border-black/20 hover:border-white 
   text-white overflow-hidden`;
 
-const SquareBoxLinkScrollLink: React.FC<SquareBoxLinkScrollLinkProps> = ({
+const SquareBoxLinkScrollLink = ({
   children,
   className,
   to,
   href,
   smooth,
   duration
-}) => {
+}: SquareBoxLinkScrollLinkProps) => {
   return (
     <Link
       to={to}

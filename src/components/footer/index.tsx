@@ -11,7 +11,7 @@ const linkInstagram = await getLink('instagram');
 
 interface FooterProps extends HTMLAttributes<HTMLDivElement> {}
 
-const Footer: React.FC<FooterProps> = ({ ...rest }) => {
+const Footer = ({ ...rest }: FooterProps) => {
   return (
     <footer
       {...rest}
