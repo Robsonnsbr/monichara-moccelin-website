@@ -9,11 +9,11 @@ interface ReCAPTCHAComponentProps {
   RECAPTCHA_KEY: string;
 }
 
-const ReCAPTCHAComponent: React.FC<ReCAPTCHAComponentProps> = ({
+const ReCAPTCHAComponent = ({
   setCaptcha,
   atualizar,
   RECAPTCHA_KEY
-}) => {
+}: ReCAPTCHAComponentProps) => {
   const handleCaptchaChange = (value: string | null) => {
     setCaptcha(value);
   };

@@ -17,7 +17,9 @@ function TopHome() {
   const sectionTopHome = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    updateSectionTopHomeRef(sectionTopHome.current);
+    if (sectionTopHome.current) {
+      updateSectionTopHomeRef(sectionTopHome.current);
+    }
   }, [updateSectionTopHomeRef]);
 
   return (

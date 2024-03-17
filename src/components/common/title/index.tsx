@@ -9,12 +9,12 @@ interface TitleProps {
   classNameSubTitle?: string;
 }
 
-const Title: React.FC<TitleProps> = ({
+const Title = ({
   className,
   title,
   subTitle,
   classNameSubTitle
-}) => {
+}: TitleProps) => {
   return (
     <div
       className={`'flex flex-col gap-2 pb-10 w-full text-left' ${className}`}

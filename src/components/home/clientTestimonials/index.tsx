@@ -12,7 +12,9 @@ function Testimonials() {
   const sectionTestimonialsHome = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    updateSectionTestimonialsHomeRef(sectionTestimonialsHome.current);
+    if (sectionTestimonialsHome.current) {
+      updateSectionTestimonialsHomeRef(sectionTestimonialsHome.current);
+    }
   }, [updateSectionTestimonialsHomeRef]);
   return (
     <section

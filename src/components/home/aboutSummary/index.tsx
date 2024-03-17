@@ -15,7 +15,9 @@ function AboutSummary() {
   const sectionAboutSummary = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    updateAboutSummaryRef(sectionAboutSummary.current);
+    if (sectionAboutSummary.current) {
+      updateAboutSummaryRef(sectionAboutSummary.current);
+    }
   }, [updateAboutSummaryRef]);
 
   return (

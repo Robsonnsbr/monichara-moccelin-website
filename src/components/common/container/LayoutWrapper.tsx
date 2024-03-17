@@ -4,7 +4,7 @@ interface LayoutWrapperProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
 }
 
-const LayoutWrapper: React.FC<LayoutWrapperProps> = ({ children, ...rest }) => {
+const LayoutWrapper = ({ children, ...rest }: LayoutWrapperProps) => {
   return (
     <div
       {...rest}

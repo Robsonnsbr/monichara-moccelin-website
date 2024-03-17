@@ -6,17 +6,21 @@ import {
   useRef
 } from 'react';
 
+interface ISectionRef extends React.RefObject<HTMLDivElement | null> {}
+
+interface IFnUpdate {
+  (ref: HTMLDivElement | null): void;
+}
+
 interface ScrollContextProps {
-  sectionAboutSummaryRef: React.RefObject<HTMLDivElement | null>;
-  sectionTopHomeRef: React.RefObject<HTMLDivElement | null>;
-  sectionListServicesRef: React.RefObject<HTMLDivElement | null>;
-  sectionTestimonialsHomeRef: React.RefObject<HTMLDivElement | null>;
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-  updateAboutSummaryRef: (ref: HTMLDivElement | null) => void;
-  updateSectionTopHomeRef: (ref: HTMLDivElement | null) => void;
-  updateSectionListServicesRef: (ref: HTMLDivElement | null) => void;
-  updateSectionTestimonialsHomeRef: (ref: HTMLDivElement | null) => void;
-  updateSectionRef: (ref: HTMLDivElement | null) => void;
+  sectionAboutSummaryRef: ISectionRef;
+  sectionTopHomeRef: ISectionRef;
+  sectionListServicesRef: ISectionRef;
+  sectionTestimonialsHomeRef: ISectionRef;
+  updateAboutSummaryRef: IFnUpdate;
+  updateSectionTopHomeRef: IFnUpdate;
+  updateSectionListServicesRef: IFnUpdate;
+  updateSectionTestimonialsHomeRef: IFnUpdate;
 }
 
 const ScrollContext = createContext<ScrollContextProps | null>(null);
@@ -25,12 +29,11 @@ interface ScrollProviderProps {
   children: ReactNode;
 }
 
-export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
+export const ScrollProvider = ({ children }: ScrollProviderProps) => {
   const sectionAboutSummaryRef = useRef<HTMLDivElement | null>(null);
   const sectionTopHomeRef = useRef<HTMLDivElement | null>(null);
   const sectionListServicesRef = useRef<HTMLDivElement | null>(null);
   const sectionTestimonialsHomeRef = useRef<HTMLDivElement | null>(null);
-  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   const updateAboutSummaryRef = useCallback((ref: HTMLDivElement | null) => {
     sectionAboutSummaryRef.current = ref;
@@ -52,21 +55,16 @@ export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
     },
     []
   );
-  const updateSectionRef = useCallback((ref: HTMLDivElement | null) => {
-    sectionTestimonialsHomeRef.current = ref;
-  }, []);
 
   const contextValue: ScrollContextProps = {
     sectionAboutSummaryRef,
     sectionTopHomeRef,
     sectionListServicesRef,
     sectionTestimonialsHomeRef,
-    sectionRef,
     updateAboutSummaryRef,
     updateSectionTopHomeRef,
     updateSectionListServicesRef,
-    updateSectionTestimonialsHomeRef,
-    updateSectionRef
+    updateSectionTestimonialsHomeRef
   };
 
   return (

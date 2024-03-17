@@ -18,7 +18,7 @@ interface SwiperContainerProps {
   testimonials: Testimonial[];
 }
 
-const SwiperContainer: React.FC<SwiperContainerProps> = ({ testimonials }) => {
+const SwiperContainer = ({ testimonials }: SwiperContainerProps) => {
   const [isMouseOver, setIsMouseOver] = useState(false);
   const swiperParams: SwiperOptions = {
     slidesPerView: 3,
