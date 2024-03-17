@@ -34,6 +34,26 @@ export const useSubmitForm = () => {
     }
   });
 
+  //TODO: Mock para teste de envio apagar quando for para produção
+  /*
+  const sendEmailMock = async ({ message, email, name, subject }: any) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        console.log('Email enviado', { message, email, name, subject });
+        resolve(200);
+        // reject(401);
+      }, 3000);
+    });
+  };
+
+  //Colocar no try para testar
+  const resultado = await sendEmailMock({
+    message,
+    email,
+    name,
+    subject
+*/
+
   const handleSubmitForm = async (data: EmailProps) => {
     const { message, email, name, subject } = data;
 
@@ -46,11 +66,9 @@ export const useSubmitForm = () => {
           reset();
         } else {
           setError(true);
-          setTimeout(() => {
-            setCaptcha(null);
-            setError(false);
-          }, 5000);
+          setError(false);
         }
+        setCaptcha(null);
       } catch (error) {
         setError(true);
         setTimeout(() => {
