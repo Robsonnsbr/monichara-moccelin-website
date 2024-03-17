@@ -15,8 +15,26 @@ import { useEffect, useState } from 'react';
 
 const DropdownMenu = ({ activeSection }: { activeSection: string }) => {
   const [isOverSection, setIsOverSection] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    let scrollTimer: NodeJS.Timeout;
+
+    function handleScroll() {
+      setIsScrolling(true);
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        setIsScrolling(false);
+      }, 100);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (activeSection && activeSection === 'list-services') {
@@ -27,16 +45,16 @@ const DropdownMenu = ({ activeSection }: { activeSection: string }) => {
   }, [activeSection]);
 
   const handleMenuMouseEnter = () => {
-    setIsMenuOpen(true);
-    onOpen();
+    if (!isScrolling) {
+      onOpen();
+    }
   };
 
   const handleMenuMouseLeave = () => {
-    setIsMenuOpen(false);
     onClose();
   };
   return (
-    <Menu isOpen={isMenuOpen || isOpen} onClose={onClose}>
+    <Menu isOpen={isOpen} onClose={onClose}>
       <MenuButton
         letterSpacing={1}
         _hover={{ textColor: 'var(--lightApricotSalmon)' }}
@@ -55,7 +73,7 @@ const DropdownMenu = ({ activeSection }: { activeSection: string }) => {
       >
         <span className="flex flex-row text-nowrap font-openSans">
           Especialidades
-          {isMenuOpen ? (
+          {isOpen ? (
             <PiCaretDownDuotone className="size-6 -mr-1" />
           ) : (
             <PiCaretUpDuotone className="size-6 -mr-1" />
