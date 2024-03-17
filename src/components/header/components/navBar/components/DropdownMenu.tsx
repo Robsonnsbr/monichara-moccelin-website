@@ -29,10 +29,10 @@ const DropdownMenu = ({ activeSection }: { activeSection: string }) => {
       }, 100);
     }
 
-    window.addEventListener('scroll', handleScroll);
+    document.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

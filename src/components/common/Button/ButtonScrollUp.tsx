@@ -2,11 +2,11 @@
 import { Link } from 'react-scroll';
 import { FaArrowUp } from 'react-icons/fa';
 import { usePathname } from 'next/navigation';
-import { useScroll } from 'src/hooks';
+import { useScrollButton } from 'src/hooks';
 
 function ButtonScrollUp() {
   const pathName = usePathname();
-  const { isVisible } = useScroll();
+  const { isVisible } = useScrollButton();
   const isHome = pathName === '/';
 
   return (
