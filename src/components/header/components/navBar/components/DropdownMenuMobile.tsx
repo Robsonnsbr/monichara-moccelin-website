@@ -12,29 +12,7 @@ import { PiCaretDownDuotone, PiCaretUpDuotone } from 'react-icons/pi';
 
 import ActiveLink from 'src/components/common/ActiveLink';
 import { useEffect, useRef, useState } from 'react';
-
-type OutsideEventHandler = (event: MouseEvent | Event) => void;
-
-function useOutsideEvents(
-  ref: React.RefObject<HTMLElement>,
-  callback: OutsideEventHandler
-): void {
-  useEffect(() => {
-    const handleOutsideEvent = (event: MouseEvent | Event) => {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
-        callback(event);
-      }
-    };
-
-    document.addEventListener('click', handleOutsideEvent);
-    document.addEventListener('scroll', handleOutsideEvent);
-
-    return () => {
-      document.removeEventListener('click', handleOutsideEvent);
-      document.removeEventListener('scroll', handleOutsideEvent);
-    };
-  }, [ref, callback]);
-}
+import { useOutsideEvents } from 'src/hooks';
 
 const DropdownMenuMobile = ({
   activeSection,
@@ -56,9 +34,7 @@ const DropdownMenuMobile = ({
 
   const menuChildren = useRef<HTMLDivElement>(null);
 
-  useOutsideEvents(menuChildren, () => {
-    onClose();
-  });
+  useOutsideEvents(menuChildren, onClose);
 
   return (
     <div ref={menuChildren} className="w-full">

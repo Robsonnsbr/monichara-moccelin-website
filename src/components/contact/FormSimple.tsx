@@ -2,8 +2,8 @@
 import { ButtonSend } from './ButtonSend';
 import { RiMailSendLine } from 'react-icons/ri';
 import ReCAPTCHAComponent from './ReCAPTCHAComponent';
-import { useSubmitForm } from '../../hooks/index';
 import WarningSend from './WarningSend';
+import { useSubmitForm } from 'src/hooks';
 
 export const FormSimple = () => {
   const {

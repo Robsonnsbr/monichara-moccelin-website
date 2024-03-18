@@ -1,61 +1,15 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+
 import { Link as ScrollLink } from 'react-scroll';
 import Link from 'next/link';
-import { useScrollContext } from 'src/contexts/refs';
 import { usePathname } from 'next/navigation';
 import MenuTropDownNav from './DropdownMenu';
+import { useRefSection } from 'src/hooks';
 
 const ActiveScrollLink = () => {
-  const {
-    sectionTopHomeRef,
-    sectionListServicesRef,
-    sectionAboutSummaryRef,
-    sectionTestimonialsHomeRef
-  } = useScrollContext();
+  const { activeSection } = useRefSection();
   const pathName = usePathname();
   const isHome = pathName === '/';
-  const [activeSection, setActiveSection] = useState('top-home');
-
-  useEffect(() => {
-    const sections = [
-      { ref: sectionTopHomeRef, offset: 0, name: 'top-home' },
-      { ref: sectionListServicesRef, offset: -400, name: 'list-services' },
-      {
-        ref: sectionAboutSummaryRef,
-        offset: -400,
-        name: 'resumo-sobre'
-      },
-      {
-        ref: sectionTestimonialsHomeRef,
-        offset: -400,
-        name: 'testimonials-home'
-      }
-    ];
-
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const { ref, offset, name } = sections[i];
-        if (ref.current && scrollTop >= ref.current.offsetTop + offset) {
-          setActiveSection(name);
-          break;
-        }
-      }
-    };
-
-    document.addEventListener('scroll', handleScroll);
-
-    return () => {
-      document.removeEventListener('scroll', handleScroll);
-    };
-  }, [
-    sectionTopHomeRef,
-    sectionListServicesRef,
-    sectionAboutSummaryRef,
-    sectionTestimonialsHomeRef
-  ]);
 
   return (
     <>
@@ -105,12 +59,7 @@ const ActiveScrollLink = () => {
             </p>
           </ScrollLink>
         ) : (
-          <Link
-            // href='/#resumo-sobre'
-            href="/#ref-resumo-sobre"
-            // target="_self"
-            className="group"
-          >
+          <Link href="/#ref-resumo-sobre" target="_self" className="group">
             <p className="class-link">Sobre</p>
           </Link>
         )}

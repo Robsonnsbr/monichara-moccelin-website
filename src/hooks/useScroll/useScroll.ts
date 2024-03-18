@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 
-type ScrollCallback = () => void;
+interface ScrollCallback {
+  (...args: any[]): void;
+}
 
 type UseScroll = (callback: ScrollCallback) => void;
 
 export const useScroll: UseScroll = (callback) => {
   useEffect(() => {
-    console.log('ativei');
     const handleScroll = () => {
       callback();
     };

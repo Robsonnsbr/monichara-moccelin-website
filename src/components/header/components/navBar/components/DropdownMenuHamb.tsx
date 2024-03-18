@@ -18,29 +18,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useScrollContext } from 'src/contexts/refs';
 import Link from 'next/link';
 import DropdownMenuMobile from './DropdownMenuMobile';
-
-type OutsideEventHandler = (event: MouseEvent | Event) => void;
-
-function useOutsideEvents(
-  ref: React.RefObject<HTMLElement>,
-  callback: OutsideEventHandler
-): void {
-  useEffect(() => {
-    const handleOutsideEvent = (event: MouseEvent | Event) => {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
-        callback(event);
-      }
-    };
-
-    document.addEventListener('click', handleOutsideEvent);
-    document.addEventListener('scroll', handleOutsideEvent);
-
-    return () => {
-      document.removeEventListener('click', handleOutsideEvent);
-      document.removeEventListener('scroll', handleOutsideEvent);
-    };
-  }, [ref, callback]);
-}
+import { useOutsideEvents } from 'src/hooks';
 
 const DropdownMenuHamb = () => {
   const pathName = usePathname();
