@@ -4,7 +4,7 @@ import { Menu, MenuButton, MenuList, MenuItem, Portal } from '@chakra-ui/react';
 import { PiCaretDownDuotone, PiCaretUpDuotone } from 'react-icons/pi';
 
 import ActiveLink from 'src/components/common/ActiveLink';
-import { useDropdownMenu } from 'src/hooks/useDropdownMenu/useDropdownMenu';
+import { useDropdownMenu } from 'src/hooks';
 
 const DropdownMenu = ({ activeSection }: { activeSection: string }) => {
   const {

@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import MenuTropDownNav from './DropdownMenu';
-import { useRefSection } from 'src/hooks/useRefSection/useRefSection';
+import { useRefSection } from 'src/hooks';
 
 const ActiveScrollLink = () => {
   const { activeSection } = useRefSection();
