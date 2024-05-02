@@ -23,6 +23,7 @@ function Logo({ width, height, logoWhite = false }: PropsLogo) {
         width: width || 'auto',
         height: height || 'auto',
         maxWidth: '100%',
+        // minWidth: 140,
         objectFit: 'contain'
       }}
     />

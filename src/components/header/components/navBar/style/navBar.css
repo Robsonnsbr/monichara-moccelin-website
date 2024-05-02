@@ -4,7 +4,7 @@
 
 @layer utilities {
     .class-navBar {
-      @apply flex w-full h-full  justify-center font-medium;
+      @apply flex w-full h-full font-medium;
       
     }
     .class-navBar ul {
