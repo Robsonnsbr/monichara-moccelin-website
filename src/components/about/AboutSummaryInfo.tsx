@@ -24,14 +24,14 @@ function AboutSummaryInfo() {
           />
         </div>
         <div
-          className="flex-1 flex flex-col gap-5 text-justify"
+          className="flex-1 flex flex-col gap-7 text-justify"
           data-aos="fade-up-right"
         >
           <h3 className="text-3xl font-bold text-center mt-10 lg:mt-0">
             Monichara Moccelin
             <p className="text-sm">OAB/PR 112.291</p>
           </h3>
-          <ul className="list-disc pl-6 space-y-4 italic font-openSans">
+          <ul className="list-disc pl-7 space-y-6 italic font-openSans">
             <li>
               Bacharel em Direito pela Pontifícia Universidade Católica do
               Paraná (PUC-PR)
@@ -48,6 +48,15 @@ function AboutSummaryInfo() {
               Membro Relatora da Comissão de Juizados Especiais da Ordem dos
               Advogados do Brasil, Seccional do Paraná (2021-2024)
             </li>
+
+            <li>
+              Curso Contratos - Negociações Preliminares (Fundação Getúlio
+              Vargas)
+            </li>
+            <li>
+              Curso Introdução ao Direito Imobiliário (Fundação Getúlio Vargas)
+            </li>
+            <li>Curso Direito Médico e da Saúde - Osvaldo Simonelli</li>
           </ul>
         </div>
       </div>

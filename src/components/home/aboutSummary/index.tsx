@@ -4,6 +4,7 @@ import ContainerMedium from 'src/components/common/container/ContainerMedium';
 import { useScrollContext } from 'src/contexts/refs';
 
 import AboutSummaryInfo from '../../about/AboutSummaryInfo';
+import Title from 'src/components/common/title';
 
 function AboutSummary() {
   const { updateAboutSummaryRef } = useScrollContext();
@@ -23,6 +24,7 @@ function AboutSummary() {
         className="global-section"
       >
         <ContainerMedium>
+          <Title title={'Sobre'} subTitle={''} />
           <AboutSummaryInfo />
         </ContainerMedium>
       </section>
