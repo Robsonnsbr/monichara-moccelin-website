@@ -1,0 +1,20 @@
+.background-top-home {
+  @apply bg-cover bg-left-top sm:bg-center h-full w-full items-center justify-center flex sm:bg-fixed transition-all ease-in-out duration-300;
+  background-image: url('/assets/background/background-law.webp');
+}
+  .content-bg-top-home {
+    @apply w-full min-h-fit h-dvh bg-gradient-to-t to-lightApricotSalmon/70 from-transparent pt-14 md:pt-24
+  }
+  .content-info-top-home {
+    @apply flex flex-col w-full items-center gap-2 text-xl
+  }
+
+  
+  .container-squareBoxLink {
+    @apply  flex flex-wrap w-full items-center justify-center my-5 text-xl text-nowrap font-semibold gap-6 sm:gap-8
+  }
+
+  .squareBoxLink {
+    @apply bg-lightApricotSalmon/20 hover:bg-lightApricotSalmon/30 w-full max-w-[360px] min-w-44 sm:w-1/3 md:w-1/3 lg:w-1/5 xl:w-1/6  transition-all ease-linear duration-200 flex flex-col gap-2  h-32 border-2 border-black/20 hover:border-lightApricotSalmon  hover:-translate-y-2 active:opacity-70 active:scale-90  text-whiteSnow items-center justify-center;
+  }
+  

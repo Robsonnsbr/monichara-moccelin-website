@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .class-navBar {
+      @apply flex w-full h-full font-medium;
+      
+    }
+    .class-navBar ul {
+      @apply hidden md:flex flex-row w-2/5 h-full  justify-evenly items-center;
+      
+    }
+    .class-container-MenuTropDown {
+      @apply flex w-full md:hidden justify-end;
+
+    }
+    .class-navBar > ul > li{
+      @apply flex
+  
+    }
+    .class-navBar > ul > li> a {
+      @apply px-3 py-3 text-white; 
+  
+    }
+    
+  }

@@ -1,0 +1,26 @@
+.listServices {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    @apply w-full h-full font-semibold
+}
+
+.squareBoxLink-listServices {
+    @apply flex flex-col py-20 px-1 items-center border border-black/10 hover:shadow-xl active:opacity-70 active:scale-95 transition-all ease-in-out duration-300
+}
+
+.primary-icon-squareBoxLink {
+    @apply absolute size-14 text-lightApricotSalmon top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+}
+
+.title-squareBoxLink{
+    @apply text-deepIndigoBlue font-bold text-lg mt-4 mx-auto
+}
+
+.resume-squareBoxLink{
+    @apply text-lightApricotSalmon text-base text-center  line-clamp-2 mx-auto
+}
+
+.secondary-icon-squareBoxLink{
+    @apply size-11  m-auto text-deepIndigoBlue text-opacity-40 bg-extraLightBlueGray rounded-md mt-4
+}

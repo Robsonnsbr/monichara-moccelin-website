@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* reset and initial styles project */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*  remove browser border pattern  */
+:focus {  
+ box-shadow: none !important  
+  }
+
+  :root {
+  /* defining application default colors ready also in tailwind.config.ts */
+  --foregroundFontBlack: #000;
+  --whiteSnow: #FFFAFA;
+  --deepIndigoBlue: #161B2E;
+  --mediumBlueGray: #556B82;
+  --lightApricotSalmon: #DEA172;
+  --lightBlueGray: #bcd8f2;
+  --extraLightBlueGray: #c6d7e7d0;
+  --activeColor: #0091ff;
+  --errorColor: #F00;
+  --noBlack: #2A3E53;
+  
+  /* define header and footer and then calculate */
+  --height-header: 60px;
+  --height-footer: 359px;
+}
+
+
+/* limit application images  */
+img {
+  max-width: 100%;
+}
+
+/* definindo fontes para a aplicação */
+h1, h2, h3,h4, h5{
+  color: var(--deepIndigoBlue);
+  font-family: var(--font-raleway);
+ }
+
+p, label{
+  color: var(--deepIndigoBlue);
+  font-family: var(--font-open-sans);
+}
+
+
+/* center item on body */
+body {
+  @apply flex justify-center;
+}
+
+
+/* plus styles project */
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #d6d6d6;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--mediumBlueGray);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lightApricotSalmon);
+}
+ 
+
+/* utilities for tailwind */
+@layer utilities {
+
+  .global-height-header {
+    min-height: var(--height-header);
+  }
+    
+  .global-height-footer {
+    min-height: var(--height-header);
+  }
+
+  .global-height-main {
+    min-height: calc(100vh - (var(--height-header) - var(--height-footer)));
+  }
+
+  .global-section {
+    @apply w-full h-fit py-16
+  } 
+
+  .class-link {
+    text-shadow: 1px 1px 0px #00000054;
+    letter-spacing: 1px;
+    @apply w-full h-full font-openSans text-base font-semibold text-nowrap text-white transition-all ease-linear duration-100 group-hover:text-lightApricotSalmon active:scale-95 active:text-deepIndigoBlue;
+}
+
+  .class-link-icon {
+    box-shadow: 1px 1px 3px 1px #00000024;
+    @apply text-white flex items-center justify-center bg-mediumBlueGray p-2 rounded transition-all ease-linear duration-100  hover:bg-lightApricotSalmon active:scale-95 active:bg-black;
+  }
+  
+}
