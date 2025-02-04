@@ -18,7 +18,7 @@ function InfoContact() {
             <FaWhatsapp className="size-5" />
           </div>
           <span>
-            &#40;41&#41; 99948-3760{' '}
+            &#40;41&#41; 99808-3760{' '}
             <ButtonLink
               href={linkWhatsappFirst}
               target={'_blank'}
@@ -36,7 +36,7 @@ function InfoContact() {
             <FaWhatsapp className="size-5" />
           </div>
           <span>
-            &#40;41&#41; 99808-3760{' '}
+            &#40;41&#41; 99948-3760{' '}
             <ButtonLink
               href={linkWhatsappSecondary}
               target={'_blank'}
@@ -77,7 +77,8 @@ function InfoContact() {
           <div className="w-6">
             <BsGlobeAmericas className="size-5" />
           </div>
-          Rua Lysimaco Ferreira da Costa, 29 - Centro Cívico - Curitiba/PR -
+          Rua Lysimaco Ferreira da Costa, 29 - Centro Cívico - Curitiba/PR{' '}
+          <br />
           CEP: 80530-100
         </span>
       </li>
