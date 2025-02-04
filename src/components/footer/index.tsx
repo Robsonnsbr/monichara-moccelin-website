@@ -88,7 +88,15 @@ const Footer = ({ ...rest }: FooterProps) => {
           </ul>
         </ContainerMedium>
       </section>
-      <section className="py-8">
+      <section className="py-8 relative">
+        <a
+          href="/sitemap"
+          target="_self"
+          rel="noopener noreferrer"
+          className="absolute bottom-2 left-5 font-openSans text-sm"
+        >
+          Mapa do Site
+        </a>{' '}
         <ContainerMedium id="container-bottom-footer">
           <div className="w-full h-full grid grid-rows-2 gap-2 text-xs">
             <p className="text-center  text-white">
