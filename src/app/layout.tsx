@@ -13,7 +13,7 @@ import Breadcrumbs from 'src/components/common/Breadcrumbs';
 import WppButton from 'src/components/common/Button/ButtonWhatsappFirst';
 
 export const metadata: Metadata = {
-  title: 'Moccelin advocacia',
+  title: 'Moccelin Advocacia',
   icons: {
     icon: '/favicon.ico'
   },
