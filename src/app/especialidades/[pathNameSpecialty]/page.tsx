@@ -2,7 +2,7 @@ import Template from 'src/app/template';
 import Main from 'src/components/common/Main';
 import ContainerMedium from 'src/components/common/container/ContainerMedium';
 import Title from 'src/components/common/title';
-import SpecialtyContent from 'src/components/specialties/content/specialty-content';
+import SpecialtyContent from 'src/components/specialties/content';
 import { data } from 'src/data/specialtiesContentData'; // Importando os dados diretamente
 
 export default function Specialty({ params }: any) {
