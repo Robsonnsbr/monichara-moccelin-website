@@ -11,7 +11,7 @@ function ButtonScrollUp() {
 
   return (
     <button
-      className={`fixed bottom-24 right-8 z-50 m-3 ${isVisible ? 'opacity-1' : 'opacity-0'} transition-all ease-linear duration-200`}
+      className={`fixed bottom-24 right-8 z-50 m-3 ${isVisible ? 'opacity-50' : 'opacity-0'} transition-all ease-linear duration-200`}
       id="button-scroll-up"
     >
       <Link
@@ -20,7 +20,7 @@ function ButtonScrollUp() {
         smooth={true}
         duration={500}
       >
-        <div className="class-link-icon">
+        <div className="class-link-icon ">
           <FaArrowUp className="size-5" />
         </div>
       </Link>

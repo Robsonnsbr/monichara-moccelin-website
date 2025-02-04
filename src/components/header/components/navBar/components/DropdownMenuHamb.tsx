@@ -128,7 +128,7 @@ const DropdownMenuHamb = () => {
                     className={`p-2 ${
                       activeSection === 'top-home'
                         ? 'text-lightApricotSalmon'
-                        : 'text-deepIndigoBlue'
+                        : 'text-deepIndigoBlue/90'
                     }`}
                   >
                     Home
