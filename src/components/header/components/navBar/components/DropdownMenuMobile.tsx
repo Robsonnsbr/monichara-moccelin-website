@@ -106,20 +106,8 @@ const DropdownMenuMobile = ({
               background="var(--whiteSnow)"
               _hover={{ background: 'var(--lightBlueGray)' }}
             >
-              <ActiveLink
-                href={'/especialidades/Consultoria jurídica empresarial'}
-              >
+              <ActiveLink href={'/especialidades/contratos'}>
                 Contratos
-              </ActiveLink>
-            </MenuItem>
-            <MenuItem
-              className="rounded-md"
-              padding={0}
-              background="var(--whiteSnow)"
-              _hover={{ background: 'var(--lightBlueGray)' }}
-            >
-              <ActiveLink href={'/especialidades/imobiliario'}>
-                Imobiliário
               </ActiveLink>
             </MenuItem>
             <MenuItem
@@ -148,7 +136,7 @@ const DropdownMenuMobile = ({
               background="var(--whiteSnow)"
               _hover={{ background: 'var(--lightBlueGray)' }}
             >
-              <ActiveLink href={'/especialidades/usuarios-plano-de-saude'}>
+              <ActiveLink href={'/especialidades/usuarios-plano-saude'}>
                 Usuários de Plano de Saúde
               </ActiveLink>
             </MenuItem>
