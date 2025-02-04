@@ -13,11 +13,14 @@ import Breadcrumbs from 'src/components/common/Breadcrumbs';
 import WppButton from 'src/components/common/Button/ButtonWhatsappFirst';
 
 export const metadata: Metadata = {
-  title: 'Monichara Moccelin',
+  title: 'Monichara Moccelin - Advocacia Humanizada',
   icons: {
     icon: '/favicon.ico'
   },
-  description: 'WebSite Doutora Monichara Moccelin'
+  description:
+    'Advocacia atual e humanizada, especialista em prevenir e solucionar conflitos jurídicos com ética e eficiência.',
+  keywords:
+    'advocacia, direito, solução de conflitos, consultoria jurídica, advogado'
 };
 
 export default function RootLayout({
