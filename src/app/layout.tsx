@@ -14,6 +14,9 @@ import WppButton from 'src/components/common/Button/ButtonWhatsappFirst';
 
 export const metadata: Metadata = {
   title: 'Monichara Moccelin',
+  icons: {
+    icon: '/favicon.ico'
+  },
   description: 'WebSite Doutora Monichara Moccelin'
 };
 
