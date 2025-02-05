@@ -8,6 +8,7 @@ const ElfSightWidget = () => {
       <div
         className="elfsight-app-c3128f2e-158e-46d3-a705-4a56fd12078a font-poppins py-10 sm:py-20"
         data-elfsight-app-lazy
+        data-aos="zoom-in-up"
       />
     </>
   );
