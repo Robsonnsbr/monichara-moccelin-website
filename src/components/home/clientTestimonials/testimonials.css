@@ -1,6 +1,6 @@
 .background-testimonials-home {
     @apply bg-cover bg-bottom h-full w-full items-center justify-center flex bg-fixed transition-all ease-linear duration-300;
-    background-image: url('/assets/background/background-moni/bg-moni-2.jpg');
+    background-image: url('/assets/background/background-moni/bg-moni-2.webp');
   }
 
   @media (max-width: 639px) {

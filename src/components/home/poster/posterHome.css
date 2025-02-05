@@ -1,6 +1,6 @@
 .background-porter-home {
     @apply bg-cover bg-bottom h-full w-full items-center justify-center flex bg-fixed transition-all ease-linear duration-300;
-    background-image: url('/assets/background/background-moni/bg-moni-1.jpg');
+    background-image: url('/assets/background/background-moni/bg-moni-1.webp');
   }
 
    @media (max-width: 639px) {
