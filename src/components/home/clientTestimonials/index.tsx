@@ -7,6 +7,7 @@ import { useScrollContext } from 'src/contexts/refs';
 // import ListTestimonials from './ListTestimonials';
 // import ButtonClickHere from 'src/components/common/Button/ButtonClickHere';
 import ElfSightWidget from './ElfSightWidget';
+import ContainerMedium from 'src/components/common/container/ContainerMedium';
 
 function Testimonials() {
   const { updateSectionTestimonialsHomeRef } = useScrollContext();
@@ -23,7 +24,9 @@ function Testimonials() {
       ref={sectionTestimonialsHome}
       id="testimonials-home"
     >
-      <ElfSightWidget />
+      <ContainerMedium>
+        <ElfSightWidget />
+      </ContainerMedium>
       {/* <div className="w-full h-fit bg-black bg-opacity-60 py-16">
         <ContainerMedium>
           <div className="content-testimonials-home pb-4">
