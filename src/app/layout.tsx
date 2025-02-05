@@ -14,9 +14,9 @@ import WppButton from 'src/components/common/Button/ButtonWhatsappFirst';
 
 export const metadata: Metadata = {
   title: 'Moccelin Advocacia',
-  icons: {
-    icon: '/favicon.ico'
-  },
+  // icons: {
+  //   icon: '/favicon.ico'
+  // },
   description:
     'Advocacia atual e humanizada, especialista em prevenir e solucionar conflitos jurídicos com ética e eficiência.',
   keywords:
@@ -30,6 +30,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          sizes="64x52"
+          href="/favicon.ico"
+        />
+      </head>
       <body
         suppressHydrationWarning={true}
         className={`${raleway.variable} ${poppins.variable} ${openSans.variable} font-mono bg-black`}
