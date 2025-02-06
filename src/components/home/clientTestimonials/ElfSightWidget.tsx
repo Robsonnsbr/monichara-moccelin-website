@@ -6,7 +6,7 @@ const ElfSightWidget = () => {
     <>
       <Script src="https://static.elfsight.com/platform/platform.js" async />
       <div
-        className="elfsight-app-c3128f2e-158e-46d3-a705-4a56fd12078a font-poppins py-10 sm:py-20"
+        className="elfsight-app-e5a0fcd2-90e3-4de8-88a4-4f3e24eb900b font-poppins py-10 sm:py-20"
         data-elfsight-app-lazy
         data-aos="zoom-in-up"
       />
