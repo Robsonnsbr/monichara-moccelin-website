@@ -103,6 +103,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               ©Copyright <strong>Monichara Moccelin</strong>. Todos direitos
               reservados.
             </p>
+
             <p className="text-center text-white ">
               Este site é protegido pelo reCAPTCHA e está sujeito à{' '}
               <a
@@ -124,6 +125,12 @@ const Footer = ({ ...rest }: FooterProps) => {
               </a>{' '}
               do Google.
             </p>
+            <a
+              href="/privacy-policy"
+              className="text-center  text-white font-openSans"
+            >
+              Política de privacidade.
+            </a>
           </div>
         </ContainerMedium>
       </section>
