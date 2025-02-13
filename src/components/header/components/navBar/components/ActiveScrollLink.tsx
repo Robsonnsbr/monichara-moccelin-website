@@ -17,7 +17,7 @@ const ActiveScrollLink = () => {
         {isHome ? (
           <ScrollLink
             to="top-home"
-            href={'topHome'}
+            href={'/#topHome'}
             smooth={true}
             duration={800}
             className="group"
@@ -67,7 +67,7 @@ const ActiveScrollLink = () => {
             rel="nofollow"
             className="group"
           >
-            <p className="class-link">Sobree</p>
+            <p className="class-link">Sobre</p>
           </Link>
         )}
       </li>

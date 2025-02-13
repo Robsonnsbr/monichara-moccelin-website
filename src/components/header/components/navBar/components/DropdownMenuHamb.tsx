@@ -118,7 +118,7 @@ const DropdownMenuHamb = () => {
               {isHome ? (
                 <ScrollLink
                   to="top-home"
-                  href={'topHome'}
+                  href={'/#topHome'}
                   rel="nofollow"
                   smooth={true}
                   duration={800}

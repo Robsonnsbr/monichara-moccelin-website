@@ -50,6 +50,7 @@ function Breadcrumbs(): JSX.Element {
                 as={NextLink}
                 href={link.href}
                 className="font-medium max-w-28 sm:max-w-full truncate p-1"
+                rel="nofollow"
               >
                 {link.title}
               </BreadcrumbLink>

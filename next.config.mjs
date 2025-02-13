@@ -5,7 +5,7 @@ const nextConfig = {
       {
         source: '/topHome',
         destination: '/',
-        permanent: true // Código 301 (redirecionamento permanente)
+        permanent: true
       },
       {
         source: '/resumo-sobre',

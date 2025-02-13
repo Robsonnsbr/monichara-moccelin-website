@@ -38,7 +38,7 @@ function TopHome() {
               <SquareBoxLinkScrollLink
                 className="squareBoxLink"
                 to="list-services"
-                href={'list-services'}
+                href={'/#list-services'}
                 smooth={true}
                 duration={800}
                 rel="nofollow"
@@ -49,7 +49,7 @@ function TopHome() {
               <SquareBoxLinkScrollLink
                 className="squareBoxLink"
                 to="resumo-sobre"
-                href={'resumo-sobre'}
+                href={'/#resumo-sobre'}
                 rel="nofollow"
                 smooth={true}
                 duration={800}
