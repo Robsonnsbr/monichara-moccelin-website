@@ -119,6 +119,7 @@ const DropdownMenuHamb = () => {
                 <ScrollLink
                   to="top-home"
                   href={'topHome'}
+                  rel="nofollow"
                   smooth={true}
                   duration={800}
                   className="group  w-full h-full"
@@ -139,6 +140,7 @@ const DropdownMenuHamb = () => {
                   className="group w-full h-full"
                   href={'/'}
                   target="_self"
+                  rel="nofollow"
                   onClick={onToggle}
                 >
                   <p className="p-2">Home</p>
@@ -155,6 +157,7 @@ const DropdownMenuHamb = () => {
                 <ScrollLink
                   to="resumo-sobre"
                   href={'resumo-sobre'}
+                  rel="nofollow"
                   smooth={true}
                   duration={800}
                   className="group  w-full h-full"
@@ -174,6 +177,7 @@ const DropdownMenuHamb = () => {
                 <Link
                   href={'/#resumo-sobre'}
                   target="_self"
+                  rel="nofollow"
                   className="group  w-full h-full"
                   onClick={onToggle}
                 >

@@ -44,6 +44,7 @@ const ActiveScrollLink = () => {
           <ScrollLink
             to="resumo-sobre"
             href={'resumo-sobre'}
+            rel="nofollow"
             smooth={true}
             duration={800}
             className="group"
@@ -59,7 +60,12 @@ const ActiveScrollLink = () => {
             </p>
           </ScrollLink>
         ) : (
-          <Link href="/#ref-resumo-sobre" target="_self" className="group">
+          <Link
+            href="/#ref-resumo-sobre"
+            target="_self"
+            rel="nofollow"
+            className="group"
+          >
             <p className="class-link">Sobre</p>
           </Link>
         )}

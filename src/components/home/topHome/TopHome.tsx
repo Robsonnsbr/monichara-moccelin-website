@@ -41,6 +41,7 @@ function TopHome() {
                 href={'list-services'}
                 smooth={true}
                 duration={800}
+                rel="nofollow"
               >
                 <MdAddChart size={36} />
                 <p className="text-white">Especialidades</p>
@@ -49,6 +50,7 @@ function TopHome() {
                 className="squareBoxLink"
                 to="resumo-sobre"
                 href={'resumo-sobre'}
+                rel="nofollow"
                 smooth={true}
                 duration={800}
               >
