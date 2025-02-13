@@ -18,7 +18,7 @@ const nextConfig = {
         permanent: true
       },
       {
-        source: '/inicio-da-pagina',
+        source: '/especialidades/inicio-da-pagina',
         destination: '/',
         permanent: true
       }

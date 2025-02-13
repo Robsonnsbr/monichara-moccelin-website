@@ -16,9 +16,10 @@ function ButtonScrollUp() {
     >
       <Link
         to={isHome ? 'top-home' : 'main'}
-        href="inicio-da-pagina"
+        href="/#inicio-da-pagina"
         smooth={true}
         duration={500}
+        rel="nofollow"
       >
         <div className="class-link-icon ">
           <FaArrowUp className="size-5" />
