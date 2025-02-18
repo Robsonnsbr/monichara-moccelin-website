@@ -7,8 +7,8 @@ export async function GET() {
   const robotsTxt = `
     User-agent: *
     Allow: /
-    Disallow: /#inicio-da-pagina
-    Disallow: /#topHome
+    Disallow: /pagina-exemplo
+    Disallow: /outra-pagina
     Sitemap: ${siteUrl}/sitemap.xml
   `;
 
