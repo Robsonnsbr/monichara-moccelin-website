@@ -20,10 +20,7 @@ const Footer = ({ ...rest }: FooterProps) => {
       <section className="pt-16 pb-8  bg-noBlack border-t-8 border-t-lightApricotSalmon border-b border-b-mediumBlueGray">
         <ContainerMedium id="container-top-footer">
           <ul className="w-full flex flex-col md:grid grid-cols-3 justify-between">
-            <li
-              className="flex flex-col gap-4 items-center md:items-start"
-              id="content-top-footer-contact"
-            >
+            <li className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-2xl font-semibold text-white">
                 MONICHARA MOCCELIN
                 <span className="text-lightApricotSalmon">.</span>
@@ -45,10 +42,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               <Logo width={300} height={170} logoWhite={true} />
             </li>
 
-            <li
-              className="flex flex-col gap-4 items-center md:items-end"
-              id="content-top-footer-contact"
-            >
+            <li className="flex flex-col gap-4 items-center md:items-end">
               <h3 className="text-2xl font-semibold text-white md:text-end">
                 ATENDIMENTO
                 <span className="text-lightApricotSalmon">.</span>
