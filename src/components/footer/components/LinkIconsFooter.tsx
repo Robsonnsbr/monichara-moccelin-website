@@ -13,12 +13,20 @@ const linkWhatsappSecondary = await getLink('whatsappSecondary');
 function IconsFooter() {
   return (
     <ul className="grid grid-cols-4 gap-4">
-      <Link href={linkInstagram} target="_blank" rel="noopener noreferrer">
+      <Link
+        href={linkInstagram}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
         <li className="class-link-icon">
           <FiInstagram className="size-5" />
         </li>
       </Link>
-      <Link href={linkLinkedIn} target="_blank" rel="noopener noreferrer">
+      <Link
+        href={linkLinkedIn}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
         <li className="class-link-icon">
           <FaLinkedinIn className="size-5" />
         </li>
@@ -26,7 +34,7 @@ function IconsFooter() {
       <Link
         href={linkWhatsappSecondary}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer nofollow"
       >
         <li className="class-link-icon">
           <FaWhatsapp className="size-5" />
