@@ -53,7 +53,7 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`${raleway.variable} ${poppins.variable} ${openSans.variable} font-mono bg-black`}
+        className={`${raleway.variable} ${poppins.variable} ${openSans.variable} font-sans bg-black`}
       >
         <AppProviders>
           <LayoutWrapper>
