@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { EmailProps } from 'src/types/emailsType';
 import { schemaZod } from 'src/hooks/useSubmitForm/schemaZod';
 import { FormDataProps } from './types';
+import { sendEventGoogleAds } from 'src/services/sendEventGoogleAds';
 
 export const useSubmitForm = () => {
   const [isWasSend, setIsWasSend] = useState(false);
@@ -60,7 +61,7 @@ export const useSubmitForm = () => {
     if (captcha || !RECAPTCHA_SITE_KEY) {
       try {
         const resultado = await sendEmail({ message, email, name, subject });
-
+        sendEventGoogleAds();
         if (resultado === 200) {
           setIsWasSend(true);
           reset();
