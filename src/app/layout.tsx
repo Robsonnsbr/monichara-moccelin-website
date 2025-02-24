@@ -11,6 +11,7 @@ import Footer from 'src/components/footer';
 import ButtonScrollUp from 'src/components/common/Button/ButtonScrollUp';
 import Breadcrumbs from 'src/components/common/Breadcrumbs';
 import WppButton from 'src/components/common/Button/ButtonWhatsappFirst';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   title: 'Moccelin Advocacia',
@@ -60,6 +61,7 @@ export default function RootLayout({
             <Header />
             <Breadcrumbs />
             {children}
+            <GoogleAnalytics gaId="AW-16892245591" />
             <WppButton />
             <Footer />
             <ButtonScrollUp />
