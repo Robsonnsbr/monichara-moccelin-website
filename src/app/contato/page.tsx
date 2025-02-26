@@ -4,6 +4,11 @@ import Main from 'src/components/common/Main';
 import { FormSimple } from '../../components/contact/FormSimple';
 import InfoContact from '../../components/contact/InfoContact';
 import Title from 'src/components/common/title';
+import { Metadata } from 'node_modules/next';
+
+export const metadata: Metadata = {
+  title: 'Contato'
+};
 
 function Contact() {
   return (

@@ -2,6 +2,12 @@ import ContainerMedium from 'src/components/common/container/ContainerMedium';
 import Main from 'src/components/common/Main';
 import Title from 'src/components/common/title';
 
+import { Metadata } from 'node_modules/next';
+
+export const metadata: Metadata = {
+  title: 'Política de Privacidade'
+};
+
 function News() {
   return (
     <Main>

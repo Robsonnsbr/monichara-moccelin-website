@@ -14,7 +14,10 @@ import WppButton from 'src/components/common/Button/ButtonWhatsappFirst';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
-  title: 'Moccelin Advocacia',
+  title: {
+    template: '%s | Moccelin Advocacia',
+    default: 'Moccelin Advocacia'
+  },
   icons: {
     icon: '/favicon.ico'
   },
@@ -28,7 +31,9 @@ export const metadata: Metadata = {
         [advogado telefone curitiba], [telefone advogado curitiba], [advogado contratos curitiba], 
         [melhor advogado curitiba], [advogado especialista curitiba], [advogado trabalhista curitiba], 
         [advogado cível curitiba], [advogado empresarial curitiba], [advogado de confiança curitiba], 
-        [atendimento jurídico curitiba], [assessoria jurídica curitiba], [advogado urgente curitiba],`
+        [atendimento jurídico curitiba], [assessoria jurídica curitiba], [advogado urgente curitiba],
+        [advogado direito médico], [advogado de médico Curitiba], [advogado empresarial Curitiba],  
+        [advogado referência direito médico], [advogado especialista direito médico]`
 };
 
 export default function RootLayout({

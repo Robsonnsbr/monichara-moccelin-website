@@ -2,6 +2,11 @@ import ContainerMedium from 'src/components/common/container/ContainerMedium';
 import Main from 'src/components/common/Main';
 import Title from 'src/components/common/title';
 import NewsPostList from '../../components/news/NewsPostList';
+import { Metadata } from 'node_modules/next';
+
+export const metadata: Metadata = {
+  title: 'Notícias'
+};
 
 function News() {
   return (
