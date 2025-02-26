@@ -7,7 +7,7 @@ import PosterHome from 'src/components/home/poster/PosterHome';
 import TopHome from 'src/components/home/topHome/TopHome';
 
 export const metadata: Metadata = {
-  title: 'Home'
+  title: 'Home | Moccelin Advocacia'
 };
 
 export default function Home() {
