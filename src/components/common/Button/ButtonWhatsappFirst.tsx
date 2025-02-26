@@ -2,8 +2,9 @@
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import consultanteAvatar from '/public/assets/image/avatar-moni.jpg';
+import { sendEventGoogleAds } from 'src/services/sendEventGoogleAds';
 
-const WppButton = () => {
+export default function WppButton() {
   return (
     <div id="whatsapp-button-first">
       <FloatingWhatsApp
@@ -15,9 +16,8 @@ const WppButton = () => {
         placeholder="Escrever mensagem..."
         chatboxHeight={360}
         notificationDelay={15}
+        onClick={() => sendEventGoogleAds()}
       />
     </div>
   );
-};
-
-export default WppButton;
+}
