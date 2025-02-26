@@ -18,10 +18,14 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico'
   },
-  description:
-    'Advocacia atual e humanizada, especialista em prevenir e solucionar conflitos jurídicos com ética e eficiência.',
-  keywords:
-    'advocacia, direito, solução de conflitos, consultoria jurídica, advogado'
+  description: `Contrate um advogado com rapidez e segurança! Oferecemos consultoria 
+                  jurídica online e soluções eficazes para resolver seu problema com 
+                  agilidade e total transparência.`,
+
+  keywords: `[consulta juridica], [contratar advogado], 
+  [preciso de advogado], [consultoria juridica online], 
+  [advogado whatsapp], [preciso de um advogado], [site de advogado], 
+  [advogado telefone], [telefone advogado], [advogado contratos]`
 };
 
 export default function RootLayout({
