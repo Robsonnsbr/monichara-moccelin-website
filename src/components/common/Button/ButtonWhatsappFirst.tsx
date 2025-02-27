@@ -2,7 +2,7 @@
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import consultanteAvatar from '/public/assets/image/avatar-moni.jpg';
-import { sendEventGoogleAds } from 'src/services/sendEventGoogleAds';
+// import { sendEventGoogleAds } from 'src/services/sendEventGoogleAds'; //TODO: corrigir bug do reload
 
 export default function WppButton() {
   return (
@@ -16,7 +16,7 @@ export default function WppButton() {
         placeholder="Escrever mensagem..."
         chatboxHeight={360}
         notificationDelay={15}
-        onClick={() => sendEventGoogleAds()}
+        // onClick={() => sendEventGoogleAds()} //TODO: corrigir bug do reload
       />
     </div>
   );
