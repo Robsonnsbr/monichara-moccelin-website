@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React, { ButtonHTMLAttributes, ReactNode } from 'react';
-import { sendEventGoogleAds } from 'src/services/sendEventGoogleAds';
+// import { sendEventGoogleAds } from 'src/services/sendEventGoogleAds';
 
 interface ButtonLinkProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   target: React.HTMLAttributeAnchorTarget;
@@ -29,7 +29,7 @@ function ButtonLink({
         target={target}
         rel={rel}
         className={`flex flex-row gap-1 sm:gap-3 items-center ${classNameLink}`}
-        onClick={() => sendEventGoogleAds()}
+        // onClick={() => sendEventGoogleAds()}
       >
         {children}
       </Link>
