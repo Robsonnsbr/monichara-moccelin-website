@@ -16,11 +16,7 @@ function AboutSummaryInfo() {
             src={moniImage1}
             placeholder="blur"
             loading="lazy"
-            style={{
-              width: 'auto',
-              height: 'auto',
-              maxHeight: 600
-            }}
+            className="w-auto h-auto max-h-[600px] shadow-md rounded-md"
           />
         </div>
         <div
