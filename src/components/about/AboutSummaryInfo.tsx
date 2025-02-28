@@ -10,13 +10,13 @@ function AboutSummaryInfo() {
           data-aos="fade-up-left"
         >
           <Image
-            width={525}
-            height={700}
+            width={612}
+            height={918}
             alt="image-monichara"
             src={moniImage1}
             placeholder="blur"
             loading="lazy"
-            className="w-auto h-auto max-h-[600px] shadow-md rounded-md"
+            className="w-auto h-auto shadow-md rounded-md"
           />
         </div>
         <div
