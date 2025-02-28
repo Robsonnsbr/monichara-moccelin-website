@@ -18,8 +18,15 @@ export const metadata: Metadata = {
     template: '%s | Moccelin Advocacia',
     default: 'Moccelin Advocacia'
   },
+  // icons: {
+  //   icon: '/favicon.ico'
+  // },
   icons: {
-    icon: '/favicon.ico'
+    icon: [
+      { url: '/favicon.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' }
+    ],
+    apple: '/apple-touch-icon.png'
   },
   description: `Contrate um advogado com rapidez e segurança! Oferecemos consultoria 
                   jurídica online e soluções eficazes para resolver seu problema com 
@@ -64,7 +71,19 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
         <link
+          rel="icon"
+          type="image/png"
+          sizes="48x48"
+          href="/favicon-48x48.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        {/* <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/apple-touch-icon.png"
@@ -81,7 +100,7 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="icon" type="image/png" sizes="48x48" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon.ico" /> */}
       </head>
       <body
         suppressHydrationWarning={true}
