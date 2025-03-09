@@ -27,7 +27,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               </h3>
               <div className="md:mb-7">
                 <p className="text-lightApricotSalmon font-raleway">
-                  <strong>Telefone/Whatsapp:</strong> &#40;41&#41; 99808-3760
+                  <strong>Whatsapp:</strong> &#40;41&#41; 99808-3760
                 </p>
                 <p className="text-lightApricotSalmon font-raleway">
                   <strong>Telefone/Whatsapp:</strong> &#40;41&#41; 99948-3760
